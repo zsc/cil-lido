@@ -1,2 +1,25 @@
- 
+* based on cil-1.3.6  http://cil.sourceforge.net/
+* linda.ml contains auxilary functions
+* lido contains lido components
+* heapify.ml need tidy-up (the old heapify.ml is saved as heapify.orig.ml)
+
+zsc@century:~/workspace/cil 15:56$ls obj/x86_LINUX/cilly.asm.exe 
+obj/x86_LINUX/cilly.asm.exe*
+
+zsc@century:~/workspace/cil 16:02$ls -l ~/loongcc-3.1/bin/cilly.asm.exe 
+lrwxrwxrwx 1 zsc users 51 Mar  4 15:28 /home/zsc/loongcc-3.1/bin/cilly.asm.exe
+-> /home/zsc/workspace/cil/obj/x86_LINUX/cilly.asm.exe*
+
+Options for ART should be (note that there is one option containing variable
+names)
+-Wp,-cil,'--doheapify --recogDotProduct --doStructPeel
+--swapAndCollapseFloatArray --assumeFieldsEqual __anonstruct_f1_neuron_19-Q-P'
+
+Options for EQUAKE should be (note that there is one option containing variable
+names)
+-Wp,-cil,'--doheapify --mergeLoop --assumeDistinct disp'
+
+To remove the variable names for art require more dataflow analysis, for equake
+it requires some abstract interpretation. 
+
  See the documentation in doc/html.
