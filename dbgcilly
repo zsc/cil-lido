@@ -1,0 +1,5 @@
+cd ~/tmpd
+#cilly --dolidomain --lidoDumpLoops --printCilAsIs --save-temps --noPrintLn /home/zsc2/workspace/cil/test/bugs/all_forms_of_loop.c
+/home/zsc2/workspace/cil/obj/x86_LINUX/cilly.byte.exe --out ./memset_fast.cil.c --noPrintLn --doCabsTransforms --frontcProfiler ./memset_fast.i
+#/home/zsc2/workspace/cil/obj/x86_LINUX/cilly.byte.exe --out ./all_forms_of_loop.cil.c --dolidomain --lidoDumpLoops --printCilAsIs --noPrintLn ./all_forms_of_loop.i
+cd -

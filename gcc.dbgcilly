@@ -1,0 +1,4 @@
+cd ~/2im/spec2000/gcc
+loongcc-gcc-3.3 -D_GNUCC -DCIL=1 -D__PATHSCALE__="3.1" -D__PATHCC__=3 -D__PATHCC_MINOR__=1 -D__PATHCC_PATCHLEVEL__=0 -O2 -D__OPTIMIZE__ -v -mabi=n32 -xc -isystem /home/zsc2/loongcc-3.1/include/3.1 -isystem /home/zsc2/loongcc-3.1/include -E t.c -o t.i
+/home/zsc2/workspace/cil/obj/x86_LINUX/cilly.byte.exe --out t.i.cil.c --noPrintLn --doCabsTransforms --optimizeSimpleArray t.i --log cil.log
+cd -
